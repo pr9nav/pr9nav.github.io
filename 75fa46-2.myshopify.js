@@ -1,4 +1,4 @@
- document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
   var parentElement = document.querySelector('#CartDrawer');
   if (parentElement) {
     parentElement.addEventListener('click', function(e) {
