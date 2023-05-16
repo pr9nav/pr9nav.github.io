@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var parentElement = document.querySelector('#CartDrawer');
+  var parentElement = document.querySelector('.cart__ctas');
   if (parentElement) {
     parentElement.addEventListener('click', function(e) {
-      if (e.target.matches('#CartDrawer-Checkout')) {
+      if (e.target.matches('.cart__checkout-button')) {
         e.preventDefault();
         fetch('/cart.js')
           .then(response => response.json())
