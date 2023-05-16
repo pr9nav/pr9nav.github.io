@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var parentElement = document.querySelector('#CartDrawer');
   if (parentElement) {
     parentElement.addEventListener('click', function(e) {
-      if (e.target.matches('#CartDrawer-Checkout')) {
+      if (e.target.matches('#new-form-atc')) {
         e.preventDefault();
         fetch('/cart.js')
           .then(response => response.json())
