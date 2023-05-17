@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function() {
   var parentElement = document.querySelector('.cart__ctas');
   if (parentElement) {
     parentElement.addEventListener('click', function(e) {
@@ -35,3 +35,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+</script>
