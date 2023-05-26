@@ -1,8 +1,8 @@
-  document.addEventListener('DOMContentLoaded', function() {
-  var parentElement = document.querySelector('.cart__ctas');
+document.addEventListener('DOMContentLoaded', function() {
+  var parentElement = document.querySelector('#CartDrawer');
   if (parentElement) {
     parentElement.addEventListener('click', function(e) {
-      if (e.target.matches('.cart__checkout-button')) {
+      if (e.target.matches('#CartDrawer-Checkout')) {
         e.preventDefault();
         fetch('/cart.js')
           .then(response => response.json())
@@ -13,10 +13,10 @@
               var firstItem = data.items[0];
               var redirectUrl;
 
-              if (firstItem.product_id == '8266162635035') {
-                redirectUrl = 'https://pay.leamoreau.co/hair-extensions/checkout';
-              } else if (firstItem.product_id == '8272355885339') {
-                redirectUrl = 'https://pay.leamoreau.co/trimmer/checkout';
+              if (firstItem.product_id == '8300079120667') {
+                redirectUrl = 'https://pay.modeholland.nl/checkout/checkout';
+              } else if (firstItem.product_id == 'XXXXX') {
+                redirectUrl = 'XXXXX';
               }
               // Add more conditions for additional products as needed
 
@@ -35,4 +35,3 @@
     });
   }
 });
-</script>
