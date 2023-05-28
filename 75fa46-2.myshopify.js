@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var parentElement = document.querySelector('#CartDrawer');
-  if (parentElement) {
+  var parentElements = document.querySelectorAll('.cart__checkout-wrapper, .cart__item-row.cart__checkout-wrapper');
+
+  parentElements.forEach(function(parentElement) {
     parentElement.addEventListener('click', function(e) {
       if (e.target.matches('.cart__checkout')) {
         e.preventDefault();
@@ -33,5 +34,5 @@ document.addEventListener('DOMContentLoaded', function() {
           .catch(error => console.error('Error:', error));
       }
     });
-  }
+  });
 });
